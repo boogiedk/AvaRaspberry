@@ -4,13 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:AvaRaspberry.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             Background="#B0E0E6"
              x:Class="AvaRaspberry.Views.WeatherWidgetView"
              >
     <UserControl.DataContext>
         <viewModels:WeatherWidgetViewModel/>
     </UserControl.DataContext>
-    <StackPanel Orientation="Vertical" Background="#B0E0E6">
-        <Image Source="/Assets/cloud_widget.png" Width="128" Height="128"/>
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image Source="/Assets/cloud_widget.png" Width="48" Height="48"/>
         <TextBlock TextAlignment="Center" Text="{Binding Weather.City}"/>
         <TextBlock TextAlignment="Center"  Text="{Binding Weather.DisplayTemp}" />
     </StackPanel>
