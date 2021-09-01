@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Input;
 using Avalonia.Markup.Xaml;
 
 namespace AvaRaspberry.Views
@@ -8,6 +9,8 @@ namespace AvaRaspberry.Views
     {
         public MainWindow()
         {
+            Cursor = new Cursor(StandardCursorType.None);
+            
             InitializeComponent();
 #if DEBUG
             this.AttachDevTools();
