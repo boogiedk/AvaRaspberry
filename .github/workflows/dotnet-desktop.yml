@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux]
 
     steps:
     - name: Checkout
