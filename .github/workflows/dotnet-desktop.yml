@@ -23,7 +23,7 @@ jobs:
     - name: Apply permission
       run: chmod u+r+x build-run.sh
     - name: Run build&run script
-      run: nohup ./build-run.sh > /home/pi/Desktop/output.txt 2>&1 &      
+      run: ./build-run.sh     
     #- name: Deploy project to Server
     #  uses: easingthemes/ssh-deploy@main
     #  env:
