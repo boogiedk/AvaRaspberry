@@ -18,7 +18,7 @@ jobs:
     - name: Apply permission
       run: chmod u+r+x build-run.sh
     - name: Run build&run script
-      run: ./build-run.sh     
+      run: RUNNER_TRACKING_ID="" && ./build-run.sh     
     #- name: Deploy project to Server
     #  uses: easingthemes/ssh-deploy@main
     #  env:
