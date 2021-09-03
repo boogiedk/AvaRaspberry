@@ -24,6 +24,8 @@ jobs:
       run: dotnet restore
     - name: Build project
       run: dotnet build
+    - name: run chmod
+      run: chmod u+r+x build-run.sh
     - name: Run script
       run: ./build-run.sh      
     - name: Deploy project to Server
