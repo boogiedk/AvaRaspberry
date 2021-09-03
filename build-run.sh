@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-echo "Start application run"
-cd AvaRaspberry/ && dotnet build
-( dotnet run & )
-echo "Start sleep"
-sleep 10s
-echo "exit"
+echo "Start execute run script"
+cd AvaRaspberry/AvaRaspberry/AvaRaspberry/bin/Debug/net5.0/ || exit
+( dotnet run AvaRaspberry.dll & )
+echo "script is executed"
 
