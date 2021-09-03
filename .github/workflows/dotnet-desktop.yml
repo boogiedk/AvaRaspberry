@@ -19,12 +19,13 @@ jobs:
       with:
         dotnet-version: 5.0.x
         
+    # Restore, Build and Run application
     - name: Restore project
       run: dotnet restore
     - name: Build project
       run: dotnet build
-    - name: Run project
-      run: dotnet run
+    - name: Run script
+      run: ./build-run.sh      
     - name: Deploy project to Server
       uses: easingthemes/ssh-deploy@main
       env:
