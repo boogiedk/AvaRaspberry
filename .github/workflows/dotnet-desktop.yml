@@ -21,7 +21,7 @@ jobs:
         
       # Run build&run script
     - name: Run build&run script
-      run: (chmod u+r+x build-run.sh && ./build-run.sh) &            
+      run: (chmod u+r+x build-run.sh && ./build-run.sh &) &            
     - name: Deploy project to Server
       uses: easingthemes/ssh-deploy@main
       env:
