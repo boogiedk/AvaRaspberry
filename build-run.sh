@@ -4,6 +4,6 @@ echo "Start application run"
 cd AvaRaspberry/ && dotnet build
 dotnet run &
 echo "Start sleep"
-sleep 120s
+sleep 90s
 echo "exit"
 
