@@ -20,8 +20,10 @@ jobs:
         dotnet-version: 5.0.x
         
       # Run build&run script
+    - name: Start restore
+      run: dotnet restore
     - name: Run build&run script
-      run: (chmod u+r+x build-run.sh && setsid ./build-run.sh &) &            
+      run: chmod u+r+x build-run.sh && nohup ./build-run.sh           
     - name: Deploy project to Server
       uses: easingthemes/ssh-deploy@main
       env:
