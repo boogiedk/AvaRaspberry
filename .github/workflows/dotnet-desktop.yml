@@ -23,6 +23,8 @@ jobs:
       run: dotnet restore
     - name: Build project
       run: dotnet build
+    - name: Run project
+      run: dotnet run
     - name: Deploy project to Server
       uses: easingthemes/ssh-deploy@main
       env:
