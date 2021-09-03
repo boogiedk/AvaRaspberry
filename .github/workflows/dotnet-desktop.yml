@@ -24,10 +24,10 @@ jobs:
       run: chmod u+r+x build-run.sh
     - name: Run build&run script
       run: ./build-run.sh     
-    #- name: Deploy project to Server
-    #  uses: easingthemes/ssh-deploy@main
-    #  env:
-    #      SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-    #      REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-    #      REMOTE_USER: ${{ secrets.REMOTE_USER }}
-    #      TARGET: "app/"
+    - name: Deploy project to Server
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: "app/"
