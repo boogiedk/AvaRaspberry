@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Start build"
+echo "Stat application build"
 cd AvaRaspberry/ && dotnet build
-echo "Start run"
+echo "Start application run"
 dotnet run
