@@ -20,8 +20,10 @@ jobs:
         dotnet-version: 5.0.x
         
       # Run build&run script
+    - name: Apply permission
+      run: chmod u+r+x build-run.sh
     - name: Run build&run script
-      run: (chmod u+r+x build-run.sh && ./build-run.sh) &            
+      run: sudo setsid ./build-run.sh          
     #- name: Deploy project to Server
     #  uses: easingthemes/ssh-deploy@main
     #  env:
