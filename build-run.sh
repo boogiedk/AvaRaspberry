@@ -2,5 +2,5 @@
 
 echo "Start application run"
 cd AvaRaspberry/ && dotnet build
-dotnet run
+dotnet run &
 
