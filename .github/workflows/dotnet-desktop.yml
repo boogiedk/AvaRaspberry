@@ -22,10 +22,8 @@ jobs:
       # Run build&run script
     - name: Apply permission
       run: chmod u+r+x build-run.sh
-    - name: cd command
-      run: cd AvaRaspberry/AvaRaspberry/
     - name: Run build&run script
-      run: nohup dotnet run > /home/pi/Desktop/output.txt 2>&1 &      
+      run: cd AvaRaspberry/AvaRaspberry/ && nohup dotnet run > /home/pi/Desktop/output.txt 2>&1 &      
     #- name: Deploy project to Server
     #  uses: easingthemes/ssh-deploy@main
     #  env:
