@@ -2,5 +2,5 @@
 
 echo "Start application run"
 cd AvaRaspberry/ &&
-nohup dotnet run > /home/pi/Desktop/output.txt 2>&1 &    
+dotnet run &    
 
