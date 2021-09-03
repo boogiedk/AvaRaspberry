@@ -2,8 +2,8 @@
 
 echo "Start application run"
 cd AvaRaspberry/ && dotnet build
-sudo setsid -w dotnet run
+( dotnet run & )
 echo "Start sleep"
-sleep 20s
+sleep 10s
 echo "exit"
 
