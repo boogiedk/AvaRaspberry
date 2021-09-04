@@ -17,15 +17,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-        
-    # Deploy project to Server
-    - name: Deploy project to Server
-      uses: easingthemes/ssh-deploy@main
-      env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: "source/"
      
     # Restore project     
     - name: Restore project
@@ -33,8 +24,19 @@ jobs:
 
     # Build project  
     - name: Build project
-      run: dotnet build
+      run: dotnet build --configuration Release
+      
+    # Deploy project to Server
+    - name: Deploy project to Server
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: "source/"      
           
     # Execute run script       
     - name: Execute run script
       run: RUNNER_TRACKING_ID="" && chmod u+r+x build-run.sh && ./build-run.sh #https://github.com/actions/runner/issues/598
+      
+      
