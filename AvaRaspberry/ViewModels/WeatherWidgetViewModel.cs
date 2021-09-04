@@ -8,7 +8,7 @@ namespace AvaRaspberry.ViewModels
 
         public WeatherWidgetViewModel()
         {
-            Weather = new WeatherModel("Moscow", 18);
+            Weather = new WeatherModel("Moscow", 24);
         }
     }
 }
