@@ -1,9 +1,10 @@
-# [AvaRaspberry](https://github.com/boogiedk/AvaRaspberryn)
+# [AvaRaspberry](https://github.com/boogiedk/AvaRaspberry)
 
 [![Build status](https://github.com/boogiedk/AvaRaspberry/actions/workflows/dotnet-desktop.yml/badge.svg?branch=master)](https://github.com/boogiedk/AvaRaspberry/actions/workflows/dotnet-desktop.yml)
 [![Pull Requests](https://img.shields.io/github/issues-pr/boogiedk/avaraspberry.svg)](https://github.com/boogiedk/avaraspberry/pulls) 
 [![Issues](https://img.shields.io/github/issues/boogiedk/avaraspberry.svg)](https://github.com/boogiedk/avaraspberry/issues) 
-![License](https://img.shields.io/github/license/boogiedk/avaraspberry.svg) ![Size](https://img.shields.io/github/repo-size/boogiedk/avaraspberry.svg)
+![License](https://img.shields.io/github/license/boogiedk/AvaRaspberry) 
+![Size](https://img.shields.io/github/repo-size/boogiedk/avaraspberry.svg)
 
 ## Project
 
@@ -58,7 +59,7 @@ Look at example how it works on Raspberry Pi 4 (Raspberry Pi Os based on Debian)
 
 ## Contributing
 
-Contributors are welcome. Please submit an issue before introducing new features, then you might create a "work in progress" (WIP) pull request to prevent other people from working on the same feature. Dev group is here: [studyAssTalks](https://t.me/studyAssTalks), please feel free to ask questions. If you are new to this project there are some entry-level issues marked with "good first issue" tag.
+Contributors are welcome. Please submit an issue before introducing new features, then you might create a "work in progress" (WIP) pull request to prevent other people from working on the same feature. If you are new to this project there are some entry-level issues marked with "good first issue" tag.
 
 ## Technology stack
 
