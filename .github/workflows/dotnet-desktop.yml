@@ -26,17 +26,14 @@ jobs:
     - name: Build project
       run: dotnet build --configuration Release
       
-    # Deploy project to Server
-    - name: Deploy project to Server
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: "source/"      
+    # Kill dotnet process  
+    - name: Kill dotnet process
+      run: pkill dotnet   
           
     # Execute run script       
     - name: Execute run script
-      run: RUNNER_TRACKING_ID="" && chmod u+r+x build-run.sh && ./build-run.sh #https://github.com/actions/runner/issues/598
+      run: RUNNER_TRACKING_ID="" && 
+      chmod u+r+x build-run.sh && 
+      ./build-run.sh # https://github.com/actions/runner/issues/598
       
       
