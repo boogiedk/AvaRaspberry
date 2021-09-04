@@ -19,7 +19,7 @@ AvaRaspberry provide screen with helpful widgets, for example weather, to do lis
 
 The main screen looks like this:
 <p align="center">
- <img width="900" height="500" align="center" src="./Resources/MainWindow.png">
+ <img width="900" height="500" align="center" src="./Resources/main-window.png">
 </p>
 
 ## Compiling
@@ -53,7 +53,7 @@ Done!
 Look at example how it works on Raspberry Pi 4 (Raspberry Pi Os based on Debian):
 
 <p align="center">
-  <img src="./Resources/autodeploy-demo.gif" width="500">
+  <img src="./Resources/deploy-demo.gif" width="500">
 </p>
 
 ## Contributing
