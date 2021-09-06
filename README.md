@@ -1,8 +1,6 @@
 # [AvaRaspberry](https://github.com/boogiedk/AvaRaspberry)
 
 [![Build status](https://github.com/boogiedk/AvaRaspberry/actions/workflows/dotnet-desktop.yml/badge.svg?branch=master)](https://github.com/boogiedk/AvaRaspberry/actions/workflows/dotnet-desktop.yml)
-[![Pull Requests](https://img.shields.io/github/issues-pr/boogiedk/avaraspberry.svg)](https://github.com/boogiedk/avaraspberry/pulls) 
-[![Issues](https://img.shields.io/github/issues/boogiedk/avaraspberry.svg)](https://github.com/boogiedk/avaraspberry/issues) 
 ![License](https://img.shields.io/github/license/boogiedk/AvaRaspberry) 
 ![Size](https://img.shields.io/github/repo-size/boogiedk/avaraspberry.svg)
 
@@ -20,12 +18,12 @@ AvaRaspberry provide screen with helpful widgets, for example weather, to do lis
 
 The main screen looks like this:
 <p align="center">
- <img width="900" height="500" align="center" src="./Resources/main-window.png">
+ <img width="600" height="300" align="center" src="./Resources/main-window.png">
 </p>
 
 ## Compiling
-Well, if you want just run AvaRaspberry application on your PC with Linux or Window OS, you need to [download and install latest .NET Core SDK](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial),
-clone project and write in console:
+Well, if you want just run AvaRaspberry application on your PC with Linux or Window OS, you need to [download and install latest .NET Core SDK](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial), 
+write in console:
 
 1) For Linux shell:
 ```sh
@@ -38,7 +36,6 @@ cd ./AvaRaspberry && bash ./build.sh
 2) For Windows command line:
 ```sh
 # Windows command line.
-# Use the '--configuration Release' option to generate app packages.
 
 git clone https://github.com/boogiedk/AvaRaspberry
 cd ./AvaRaspberry && powershell -ExecutionPolicy Unrestricted ./build.ps1
@@ -47,8 +44,8 @@ cd ./AvaRaspberry && powershell -ExecutionPolicy Unrestricted ./build.ps1
 ### Automatic Deployment to your Linux PC
 In order to configure automatic deployment for this application, you need to start use [Github Action](https://docs.github.com/en/actions).
 Good tutorial for configure [here.](https://www.youtube.com/watch?v=X3F3El_yvFg)
-After this, you need to write workflow file (pipeline). For deploing application on raspberry pi OS you can use [this workflow file.](https://github.com/boogiedk/AvaRaspberry/blob/master/.github/workflows/dotnet-desktop.yml)
-When you wrote file, you need to trigger your github action job.
+After this, you need to write workflow file (pipeline). For deploying application on raspberry pi OS you can use [this workflow file.](https://github.com/boogiedk/AvaRaspberry/blob/master/.github/workflows/dotnet-desktop.yml)
+When you have been write file, you need to trigger your github action job.
 Done!
 
 Look at example how it works on Raspberry Pi 4 (Raspberry Pi Os based on Debian):
