@@ -40,6 +40,6 @@ jobs:
           
     # Execute run script       
     - name: Execute run script
-      run: RUNNER_TRACKING_ID="" && chmod u+r+x build-run.sh && ./build-run.sh # https://github.com/actions/runner/issues/598
+      run: RUNNER_TRACKING_ID="" && chmod u+r+x build.sh && ./build.sh # https://github.com/actions/runner/issues/598
       
       
