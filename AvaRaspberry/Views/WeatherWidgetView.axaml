@@ -12,7 +12,7 @@
     </UserControl.DataContext>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Image Source="/Assets/cloud_widget.png" Width="48" Height="48"/>
-        <TextBlock TextAlignment="Center" Text="{Binding Weather.City}"/>
-        <TextBlock TextAlignment="Center"  Text="{Binding Weather.DisplayTemp}" />
+        <TextBlock TextAlignment="Center" Text="{Binding WeatherModel.City}"/>
+        <TextBlock TextAlignment="Center"  Text="{Binding WeatherModel.DisplayTemperature}" />
     </StackPanel>
 </UserControl>
