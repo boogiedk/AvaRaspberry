@@ -43,10 +43,9 @@ jobs:
       shell: bash
       env:
         APITOKEN: ${{ secrets.APPSETTINGSJSON }}
-        TESTVALUE: 'testValue'
       run: |
          chmod u+r+x build.sh
-         RUNNER_TRACKING_ID="" && sh build.sh $APITOKEN TESTVALUE 
+         RUNNER_TRACKING_ID="" && sh build.sh "$APITOKEN"
          
          # https://github.com/actions/runner/issues/598
         
