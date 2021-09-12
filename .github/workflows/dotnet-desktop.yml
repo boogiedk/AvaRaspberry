@@ -40,6 +40,9 @@ jobs:
           
     # Execute run script       
     - name: Execute run script
-      run: RUNNER_TRACKING_ID="" && chmod u+r+x build.sh && ./build.sh ${{ secrets.APPSETTINGSJSON }} # https://github.com/actions/runner/issues/598
+      run: RUNNER_TRACKING_ID="" && chmod u+r+x build.sh && ./build.sh $API-TOKEN  # https://github.com/actions/runner/issues/598
+      env:
+        API-TOKEN: ${{ secrets.APPSETTINGSJSON }}
+        
       
       
