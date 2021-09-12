@@ -16,6 +16,7 @@ cd AvaRaspberry/bin/Release/net5.0/ || exit
 # Create AppSettings config with Github Secrets
 
 echo "test123"
+echo $S1
 echo "$S1"
 echo "$S2"
 
