@@ -42,10 +42,10 @@ jobs:
     - name: Execute run script
       shell: bash
       env:
-        APITOKEN: ${{ secrets.APPSETTINGSJSON }}
+        SECRET_PASSPHRASE: ${{ secrets.SECRET_PASSPHRASE }}
       run: |
          chmod u+r+x build.sh
-         RUNNER_TRACKING_ID="" && sh build.sh "$APITOKEN"
+         RUNNER_TRACKING_ID="" && sh build.sh "$SECRET_PASSPHRASE"
          
          # https://github.com/actions/runner/issues/598
         
