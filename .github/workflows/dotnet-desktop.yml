@@ -37,7 +37,15 @@ jobs:
     # Kill dotnet process  
     - name: Kill dotnet process
       run: pkill dotnet   
-          
+ 
+    # Execute run script       
+    - name: TEST DEPLOY SCRIPT
+      env:
+        API-TOKEN: ${{ secrets.APPSETTINGSJSON }}
+      run: | 
+        echo it token -  $API-TOKEN, its secrets - ${{ secrets.APPSETTINGSJSON }}
+
+ 
     # Execute run script       
     - name: Execute run script
       env:
