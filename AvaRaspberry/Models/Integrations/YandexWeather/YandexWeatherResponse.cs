@@ -8,8 +8,6 @@ namespace AvaRaspberry.Models.Integrations.YandexWeather
         public int Now { get; set; }
         public DateTime NowDt { get; set; }
         public Info Info { get; set; }
-        public GeoObject GeoObject { get; set; }
-        public Yesterday Yesterday { get; set; }
         public Fact Fact { get; set; }
         public List<Forecast> Forecasts { get; set; }
     }

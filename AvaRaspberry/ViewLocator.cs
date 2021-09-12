@@ -2,6 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using AvaRaspberry.ViewModels;
 using System;
+using System.Configuration;
 
 namespace AvaRaspberry
 {
@@ -14,6 +15,7 @@ namespace AvaRaspberry
             var name = data.GetType().FullName!.Replace("ViewModel", "View");
             var type = Type.GetType(name);
 
+            
             if (type != null)
             {
                 return (Control)Activator.CreateInstance(type)!;

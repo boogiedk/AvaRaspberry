@@ -8,7 +8,7 @@
         public int FeelsLike { get; set; }
         public string Icon { get; set; }
         public string Condition { get; set; }
-        public int Cloudness { get; set; }
+        public string Cloudness { get; set; }
         public int PrecType { get; set; }
         public int PrecProb { get; set; }
         public int PrecStrength { get; set; }
@@ -22,7 +22,6 @@
         public bool Polar { get; set; }
         public string Season { get; set; }
         public string Source { get; set; }
-        public AccumPrec AccumPrec { get; set; }
         public double SoilMoisture { get; set; }
         public int SoilTemp { get; set; }
         public int UvIndex { get; set; }

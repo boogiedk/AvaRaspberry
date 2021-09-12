@@ -13,8 +13,5 @@ namespace AvaRaspberry.Models.Integrations.YandexWeather
         public string SetEnd { get; set; }
         public int MoonCode { get; set; }
         public string MoonText { get; set; }
-        public Parts Parts { get; set; }
-        public List<Hour> Hours { get; set; }
-        public Biomet Biomet { get; set; }
     }
 }
