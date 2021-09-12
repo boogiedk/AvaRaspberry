@@ -43,13 +43,13 @@ jobs:
       env:
         API-TOKEN: ${{ secrets.APPSETTINGSJSON }}
       run: | 
-        echo it token -  $API-TOKEN, its secrets - ${{ secrets.APPSETTINGSJSON }}
+        echo it token -  $APITOKEN, its secrets - ${{ secrets.APPSETTINGSJSON }}
 
  
     # Execute run script       
     - name: Execute run script
       env:
-        API-TOKEN: ${{ secrets.APPSETTINGSJSON }}
+        APITOKEN: ${{ secrets.APPSETTINGSJSON }}
       run: RUNNER_TRACKING_ID="" && chmod u+r+x build.sh && ./build.sh {{ env.API-TOKEN }}  # https://github.com/actions/runner/issues/598
         
       
