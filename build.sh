@@ -14,11 +14,14 @@ dotnet build --configuration Release
 cd AvaRaspberry/bin/Release/net5.0/ || exit
 
 # Create AppSettings config with Github Secrets
+
+echo "$S1" 
+
 echo -e "{
   "Widgets": {
     "Weather": {
       "YandexWeather": {
-        "ApiToken": $S1
+        "ApiToken": "$S1"
       }
     }
   }
