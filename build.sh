@@ -18,7 +18,7 @@ echo -e "{
   "Widgets": {
     "Weather": {
       "YandexWeather": {
-        "ApiToken": "$S1"
+        "ApiToken": $S1
       }
     }
   }
