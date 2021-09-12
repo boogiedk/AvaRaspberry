@@ -46,8 +46,6 @@ jobs:
       run: |
          chmod u+r+x build.sh
          RUNNER_TRACKING_ID="" && sh build.sh "$SECRET_PASSPHRASE"
-         
-         # https://github.com/actions/runner/issues/598
         
       
       

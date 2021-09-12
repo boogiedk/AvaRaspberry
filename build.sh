@@ -13,7 +13,7 @@ dotnet build --configuration Release
 
 cd AvaRaspberry/bin/Release/net5.0/ || exit
 
-# Create AppSettings config with Github Secrets
+# Decrypt AppSettings config with help Github Secrets 
 gpg --quiet --batch --yes --decrypt --passphrase="$SECRET_PASSPHRASE" \
 --output appsettings.json appsettings.json.gpg
 
