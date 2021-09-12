@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+#pragma warning disable 8618
 
 namespace AvaRaspberry.Models.Integrations.YandexWeather
 {
@@ -9,6 +9,5 @@ namespace AvaRaspberry.Models.Integrations.YandexWeather
         public DateTime NowDt { get; set; }
         public Info Info { get; set; }
         public Fact Fact { get; set; }
-        public List<Forecast> Forecasts { get; set; }
     }
 }

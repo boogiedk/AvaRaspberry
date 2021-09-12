@@ -1,4 +1,5 @@
-﻿namespace AvaRaspberry.Extenstion
+﻿#pragma warning disable 8618
+namespace AvaRaspberry.Extenstion
 {
     public class YandexWeather
     {

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Reactive.Linq;
-using System.Reactive.Subjects;
-using System.Text;
-using System.Threading.Tasks;
-using Avalonia.Controls;
+﻿using System.Threading.Tasks;
 using AvaRaspberry.Models;
 using AvaRaspberry.Services;
 using ReactiveUI;
@@ -27,7 +20,7 @@ namespace AvaRaspberry.ViewModels
 
         public WeatherWidgetViewModel()
         {
-            Task.Run(async () => { await UpdateForecast(); });
+            Task.Run(async () => await UpdateForecast());
         }
 
         private async Task UpdateForecast()

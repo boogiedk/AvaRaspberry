@@ -2,9 +2,11 @@
 {
     public class Tzinfo
     {
-        public string Name { get; set; }
-        public string Abbr { get; set; }
-        public bool Dst { get; set; }
-        public int Offset { get; set; }
+        public Tzinfo(string name)
+        {
+            Name = name;
+        }
+
+        public string Name { get; }
     }
 }

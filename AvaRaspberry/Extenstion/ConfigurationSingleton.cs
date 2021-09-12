@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+#pragma warning disable 8618
 
 namespace AvaRaspberry.Extenstion
 {
@@ -12,6 +13,7 @@ namespace AvaRaspberry.Extenstion
 
         public static ConfigurationSingleton GetInstance()
         {
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             if (_instance != null) return _instance;
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true, true)

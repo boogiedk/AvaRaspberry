@@ -1,8 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.ReactiveUI;
 using AvaRaspberry.Extenstion;
-using AvaRaspberry.Models;
-using Microsoft.Extensions.Configuration;
 
 namespace AvaRaspberry
 {

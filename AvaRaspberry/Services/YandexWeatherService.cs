@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using AvaRaspberry.Extenstion;
-using AvaRaspberry.Models;
 using AvaRaspberry.Models.Integrations.YandexWeather;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
 namespace AvaRaspberry.Services
@@ -32,7 +28,7 @@ namespace AvaRaspberry.Services
         {
             ApplyTokenToHeaders(YandexWeatherApiToken);
         }
-        
+
         public async Task<YandexWeatherResponse> GetByCoordinate(string lat = Latitude, string lon = Longitude)
         {
             var path = YandexWeatherUrl(lat, lon);
@@ -40,7 +36,8 @@ namespace AvaRaspberry.Services
             response.EnsureSuccessStatusCode();
 
             var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-            var content = JsonConvert.DeserializeObject<YandexWeatherResponse>(json) ?? new YandexWeatherResponse();
+            var content = JsonConvert.DeserializeObject<YandexWeatherResponse>(json)
+                          ?? new YandexWeatherResponse();
 
             return content;
         }
