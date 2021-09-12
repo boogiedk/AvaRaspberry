@@ -41,7 +41,7 @@ jobs:
     # Execute run script       
     - name: TEST DEPLOY SCRIPT
       env:
-        API-TOKEN: ${{ secrets.APPSETTINGSJSON }}
+        APITOKEN: ${{ secrets.APPSETTINGSJSON }}
       run: | 
         echo it token -  $APITOKEN, its secrets - ${{ secrets.APPSETTINGSJSON }}
 
