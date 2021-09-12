@@ -37,20 +37,12 @@ jobs:
     # Kill dotnet process  
     - name: Kill dotnet process
       run: pkill dotnet   
- 
-    # Execute run script       
-    - name: TEST DEPLOY SCRIPT
-      env:
-        APITOKEN: ${{ secrets.APPSETTINGSJSON }}
-      run: | 
-        echo it token -  $APITOKEN, its secrets - ${{ secrets.APPSETTINGSJSON }}
 
- 
     # Execute run script       
     - name: Execute run script
       env:
         APITOKEN: ${{ secrets.APPSETTINGSJSON }}
-      run: RUNNER_TRACKING_ID="" && chmod u+r+x build.sh && ./build.sh {{ env.API-TOKEN }}  # https://github.com/actions/runner/issues/598
+      run: RUNNER_TRACKING_ID="" && chmod u+r+x build.sh && ./build.sh $APITOKEN "test"  # https://github.com/actions/runner/issues/598
         
       
       
