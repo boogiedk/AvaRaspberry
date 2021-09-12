@@ -15,7 +15,7 @@ cd AvaRaspberry/bin/Release/net5.0/ || exit
 
 # Create AppSettings config with Github Secrets
 
-echo $S1
+echo "test123"
 
 echo -e "{
   "Widgets": {
@@ -25,7 +25,7 @@ echo -e "{
       }
     }
   }
-}" >> appsettings.json
+}" >> appsettings2.json
 
 # Run
 ( dotnet AvaRaspberry.dll & )
