@@ -6,6 +6,8 @@
         xmlns:viewModels="clr-namespace:AvaRaspberry.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaRaspberry.Views.MainWindow"
+        SystemDecorations="None"
+        WindowState="FullScreen"
         Icon="/Assets/avalonia-logo.ico"
         Title="AvaRaspberry">
         <Window.DataContext>

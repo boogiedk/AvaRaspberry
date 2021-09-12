@@ -13,6 +13,9 @@ dotnet build --configuration Release
 
 cd AvaRaspberry/bin/Release/net5.0/ || exit
 
+# Create AppSettings config with Github Secrets
+echo -e "$1" >> appsettings.json
+
 # Run
 ( dotnet AvaRaspberry.dll & )
 echo "Build and run project script is executed."
