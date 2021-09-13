@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AvaRaspberry.Views.EmptyWidgetView"
-             Background="Green">
+             Background="#DCDCDC">
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Image Source="/Assets/empty_widget.png" Width="48" Height="48"/>
         <TextBlock TextAlignment="Center" Text="Виджет отсутствует" />
