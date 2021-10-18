@@ -45,7 +45,7 @@ jobs:
         SECRET_PASSPHRASE: ${{ secrets.SECRET_PASSPHRASE }}
       run: |
          chmod u+r+x build.sh
-         RUNNER_TRACKING_ID="" && sh build.sh "$SECRET_PASSPHRASE"
+         RUNNER_TRACKING_ID="" && sh run.sh "$SECRET_PASSPHRASE"
         
       
       
